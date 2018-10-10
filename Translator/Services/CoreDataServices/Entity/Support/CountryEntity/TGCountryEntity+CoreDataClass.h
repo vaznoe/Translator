@@ -13,4 +13,4 @@
 
 @end
 
-#import "TGCountryEntity+CoreDataProperties.h"
+//#import "TGCountryEntity+CoreDataProperties.h"

@@ -13,4 +13,4 @@
 
 @end
 
-#import "TGSupportEntity+CoreDataProperties.h"
+//#import "TGSupportEntity+CoreDataProperties.h"
