@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10EDE84216D728800F2BB6A /* TGSupportEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C10EDE83216D728800F2BB6A /* TGSupportEntity+CoreDataClass.m */; };
+		C10EDE87216D72DC00F2BB6A /* TGCountryEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C10EDE86216D72DC00F2BB6A /* TGCountryEntity+CoreDataClass.m */; };
+		C10EDE92216D7F3A00F2BB6A /* TGTranslatorApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = C10EDE91216D7F3A00F2BB6A /* TGTranslatorApiService.m */; };
+		C10EDE96216D7FAF00F2BB6A /* TGResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = C10EDE95216D7FAF00F2BB6A /* TGResponce.m */; };
+		C10EDE99216D800600F2BB6A /* TGSupportResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = C10EDE98216D800600F2BB6A /* TGSupportResponce.m */; };
 		C12AEA1B2168428E00DDB2C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C12AEA1A2168428E00DDB2C3 /* AppDelegate.m */; };
 		C12AEA1E2168428E00DDB2C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12AEA1D2168428E00DDB2C3 /* ViewController.m */; };
 		C12AEA212168428E00DDB2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12AEA1F2168428E00DDB2C3 /* Main.storyboard */; };
@@ -41,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C10EDE82216D728800F2BB6A /* TGSupportEntity+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGSupportEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		C10EDE83216D728800F2BB6A /* TGSupportEntity+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TGSupportEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		C10EDE85216D72DC00F2BB6A /* TGCountryEntity+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGCountryEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		C10EDE86216D72DC00F2BB6A /* TGCountryEntity+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TGCountryEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		C10EDE90216D7F3A00F2BB6A /* TGTranslatorApiService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGTranslatorApiService.h; sourceTree = "<group>"; };
+		C10EDE91216D7F3A00F2BB6A /* TGTranslatorApiService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGTranslatorApiService.m; sourceTree = "<group>"; };
+		C10EDE94216D7FAF00F2BB6A /* TGResponce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGResponce.h; sourceTree = "<group>"; };
+		C10EDE95216D7FAF00F2BB6A /* TGResponce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGResponce.m; sourceTree = "<group>"; };
+		C10EDE97216D800600F2BB6A /* TGSupportResponce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGSupportResponce.h; sourceTree = "<group>"; };
+		C10EDE98216D800600F2BB6A /* TGSupportResponce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGSupportResponce.m; sourceTree = "<group>"; };
+		C10EDE9A216D8A3B00F2BB6A /* TGTranslatorServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGTranslatorServiceDelegate.h; sourceTree = "<group>"; };
 		C12AEA162168428E00DDB2C3 /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12AEA192168428E00DDB2C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C12AEA1A2168428E00DDB2C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +110,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C10EDE8E216D7D7000F2BB6A /* TranslatorApiService */ = {
+			isa = PBXGroup;
+			children = (
+				C10EDE93216D7F8200F2BB6A /* Responce */,
+				C10EDE90216D7F3A00F2BB6A /* TGTranslatorApiService.h */,
+				C10EDE91216D7F3A00F2BB6A /* TGTranslatorApiService.m */,
+				C10EDE9A216D8A3B00F2BB6A /* TGTranslatorServiceDelegate.h */,
+			);
+			path = TranslatorApiService;
+			sourceTree = "<group>";
+		};
+		C10EDE93216D7F8200F2BB6A /* Responce */ = {
+			isa = PBXGroup;
+			children = (
+				C10EDE94216D7FAF00F2BB6A /* TGResponce.h */,
+				C10EDE95216D7FAF00F2BB6A /* TGResponce.m */,
+				C10EDE97216D800600F2BB6A /* TGSupportResponce.h */,
+				C10EDE98216D800600F2BB6A /* TGSupportResponce.m */,
+			);
+			path = Responce;
+			sourceTree = "<group>";
+		};
 		C12AEA0D2168428E00DDB2C3 = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				C12AEA5F2168554D00DDB2C3 /* Services */,
-				C12AEA65216855D400DDB2C3 /* TGCoreDataService.h */,
-				C12AEA66216855D400DDB2C3 /* TGCoreDataService.m */,
 				C12AEA502168450300DDB2C3 /* Model */,
 				C12AEA192168428E00DDB2C3 /* AppDelegate.h */,
 				C12AEA1A2168428E00DDB2C3 /* AppDelegate.m */,
@@ -186,6 +222,7 @@
 		C12AEA5F2168554D00DDB2C3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C10EDE8E216D7D7000F2BB6A /* TranslatorApiService */,
 				C12AEA602168556C00DDB2C3 /* CoreDataServices */,
 			);
 			path = Services;
@@ -195,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				C12AEA612168558300DDB2C3 /* Entity */,
+				C12AEA65216855D400DDB2C3 /* TGCoreDataService.h */,
+				C12AEA66216855D400DDB2C3 /* TGCoreDataService.m */,
 			);
 			path = CoreDataServices;
 			sourceTree = "<group>";
@@ -219,6 +258,8 @@
 		C12AEA632168559A00DDB2C3 /* CountryEntity */ = {
 			isa = PBXGroup;
 			children = (
+				C10EDE85216D72DC00F2BB6A /* TGCountryEntity+CoreDataClass.h */,
+				C10EDE86216D72DC00F2BB6A /* TGCountryEntity+CoreDataClass.m */,
 			);
 			path = CountryEntity;
 			sourceTree = "<group>";
@@ -226,6 +267,8 @@
 		C12AEA64216855AA00DDB2C3 /* SupportEntity */ = {
 			isa = PBXGroup;
 			children = (
+				C10EDE82216D728800F2BB6A /* TGSupportEntity+CoreDataClass.h */,
+				C10EDE83216D728800F2BB6A /* TGSupportEntity+CoreDataClass.m */,
 			);
 			path = SupportEntity;
 			sourceTree = "<group>";
@@ -365,10 +408,15 @@
 				C12AEA5B2168472700DDB2C3 /* TGCountry.m in Sources */,
 				C12AEA55216846EA00DDB2C3 /* TGGetLangs.m in Sources */,
 				C12AEA582168470C00DDB2C3 /* TGSupportLanguage.m in Sources */,
+				C10EDE96216D7FAF00F2BB6A /* TGResponce.m in Sources */,
+				C10EDE99216D800600F2BB6A /* TGSupportResponce.m in Sources */,
 				C12AEA242168428E00DDB2C3 /* Translator.xcdatamodeld in Sources */,
+				C10EDE87216D72DC00F2BB6A /* TGCountryEntity+CoreDataClass.m in Sources */,
+				C10EDE92216D7F3A00F2BB6A /* TGTranslatorApiService.m in Sources */,
 				C12AEA1E2168428E00DDB2C3 /* ViewController.m in Sources */,
 				C12AEA2C2168428F00DDB2C3 /* main.m in Sources */,
 				C12AEA1B2168428E00DDB2C3 /* AppDelegate.m in Sources */,
+				C10EDE84216D728800F2BB6A /* TGSupportEntity+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

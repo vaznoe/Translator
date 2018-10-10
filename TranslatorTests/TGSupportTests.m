@@ -11,9 +11,13 @@
 #import "TGSupportLanguage.h"
 #import "TGCountry.h"
 #import "TGGetLangs.h"
-#import "TGCoreDataService.h"
 
-@interface TGSupportTests : XCTestCase
+#import "TGCoreDataService.h"
+#import "TGSupportResponce.h"
+#import "TGTranslatorService.h"
+
+
+@interface TGSupportTests : XCTestCase <TGTranslatorServiceDelegate>
 
 @end
 
@@ -90,6 +94,34 @@
         XCTAssertTrue(country.code.length >= 2, @"Code: %@", country.code);
         XCTAssertTrue(country.name.length > 2);
     }
+}
+
+- (void)testSupportResponce {
+    TGSupportResponce *responce = [[TGSupportResponce alloc] initWithObject:nil andDelegate:self];
+    NSDictionary *serverDictionary = @{KeySupportLanguagesDirs: @[@"ru-en", @"ru-pl", @"ru-fr", @"en-ru", @"en-fr"],
+                                       KeySupportLanguagesLangs: @{@"ru":@"русский",
+                                                                   @"en":@"английский",
+                                                                   @"fr":@"французкий",
+                                                                   @"pl":@"польский"}};
+    NSData *myData = [NSJSONSerialization dataWithJSONObject:serverDictionary options:NSJSONWritingPrettyPrinted error:nil];
+    [responce setResponceServiceData:myData andError:nil];
+}
+
+-(void)translatorApiService: (TGTranslatorService*) service didSupportLanguages: (NSArray<TGSupportLanguage*>*)supportLanguages {
+    XCTAssertTrue(supportLanguages.count == 2);
+    
+    TGCoreDataService *cDataService = [cDataService getInputCountries];
+    NSArray *inputCounties = [cDataService getOutputCountriesWithInputCountryCode:code];
+    XCTAssertGreaterThan(outputCountries.count, supportLanguages.count);
+    
+    for (TGCountry *country in outputCountries) {
+        XCTAssertTrue(country.code.length >= 2, @"Code: %@", country.code);
+        XCTAssertTrue(country.name.length > 2);
+    }
+}
+
+-(void)traslatorService: (TGTranslatorService*) servoce didFailWithError: (NSError*) error {
+    XCTFail(@"Error: %@", error);
 }
 
 @end

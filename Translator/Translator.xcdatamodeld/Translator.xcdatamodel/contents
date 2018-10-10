@@ -8,10 +8,10 @@
     <entity name="SupportEntity" representedClassName="SupportEntity" syncable="YES" codeGenerationType="class">
         <attribute name="inputCountryCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="inputCountryName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="countries" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CountryEntity" inverseName="support" inverseEntity="CountryEntity" syncable="YES"/>
+        <relationship name="countries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CountryEntity" inverseName="support" inverseEntity="CountryEntity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CountryEntity" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="SupportEntity" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="CountryEntity" positionX="-346.88671875" positionY="-5.2734375" width="128" height="88"/>
+        <element name="SupportEntity" positionX="-54" positionY="-9" width="128" height="88"/>
     </elements>
 </model>
